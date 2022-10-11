@@ -1,0 +1,25 @@
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    width: 300px;
+    height: 200px;
+    background-color: rgb(154, 197, 231);
+    border-radius: 5px;
+    @include flex-center()
+}
+.content{
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: rgb(209, 230, 213);
+    @include flex-center();
+    cursor: pointer;
+}
+
+.canvas{
+    visibility: hidden;
+}
